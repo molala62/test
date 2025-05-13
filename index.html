@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>一応全部入り動く</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- ▼ページ上部にロゴ -->
+<div style="text-align:center; margin:20px 0;">
+  <img src="https://i.imgur.com/nBqGSsA.png"
+       alt="あぶない？リスナー診断ロゴ"
+       style="max-width:100%; height:auto;">
+  <div style="font-size:14px; color:#666;">ストーカー気質リスナーテスト</div>
+
+
+<!-- ▼診断フォームと結果エリア -->
+<form id="quizForm"></form>
+<button type="submit" form="quizForm" class="submit-btn">診断する</button>
+<canvas id="resultChart"></canvas>
+<div id="resultDisplay"></div>
+<div class="disclaimer" style="margin-top: 1.5em; font-size: 0.5em; color: #666; background-color: #f9f9f9; padding: 1em; border-left: 4px solid #ccc; border-radius: 4px;">
+  ※このテストはあくまで傾向をみる参考ツールです。<br>
+  リスナーや自分自身を一概に「危険」「安全」と断定するものではなく、実際の関係性や配信スタイルに応じて柔軟に判断してください。
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/chart.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
